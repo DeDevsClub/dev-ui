@@ -3,6 +3,7 @@
 import { Button } from '@repo/shadcn-ui/components/ui/button';
 import Image from 'next/image';
 import Logo from './logo.svg';
+import Link from 'next/link';
 
 export const V0Button = ({ name }: { name: string }) => {
   const registryUrl = new URL(
@@ -21,7 +22,7 @@ export const V0Button = ({ name }: { name: string }) => {
         className="h-7 gap-1 text-foreground"
         asChild
       >
-        <a href={v0Url.toString()} target="_blank" rel="noopener noreferrer">
+        <Link href={v0Url.toString()} target="_blank" rel="noopener noreferrer">
           <span>Edit in</span>
           <Image
             src={Logo}
@@ -30,7 +31,7 @@ export const V0Button = ({ name }: { name: string }) => {
             height={16}
             className="dark:invert"
           />
-        </a>
+        </Link>
       </Button>
     </div>
   );

@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => (
       title: (
         <Image
           src="/logo.svg"
-          alt="Dev UI"
+          alt="DeDevs UI"
           width={611}
           height={116}
           className="h-5 w-[105px] dark:invert"

@@ -28,7 +28,7 @@ export const GET = async (request: NextRequest) => {
   }
 
   const { title, description } = page.data;
-  const text = `Dev UI ${title} ${description}`;
+  const text = `DeDevs UI ${title} ${description}`;
 
   return new ImageResponse(
     <div tw="bg-[#1D4ED8] relative flex flex-col justify-between w-full h-full">
@@ -69,7 +69,7 @@ export const GET = async (request: NextRequest) => {
         tw="flex flex-col bottom-0 left-0 right-0 relative z-10 p-12"
         style={{ fontFamily: 'Geist' }}
       >
-        <p tw="text-lg m-0 text-white/80 font-semibold">Dev UI</p>
+        <p tw="text-lg m-0 text-white/80 font-semibold">DeDevs UI</p>
         <h1
           tw="my-4 text-6xl font-bold text-white"
           style={{ fontFamily: 'Geist Semibold' }}
