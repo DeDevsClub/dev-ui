@@ -22,3 +22,8 @@
   - gantt
   - table
   - kanban
+
+
+  # Next
+  - Components:
+    - dropzone

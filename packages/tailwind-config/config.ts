@@ -3,7 +3,7 @@ import animate from 'tailwindcss-animate';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
 export const config: Config = {
-  darkMode: ['class'],
+  darkMode: ['class', 'dark'],
   content: [],
   theme: {
     container: {

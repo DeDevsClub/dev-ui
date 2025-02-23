@@ -15,9 +15,11 @@
     "@repo/ai": "workspace:*",
     "@repo/announcement": "workspace:*",
     "@repo/banner": "workspace:*",
+    "@repo/bento": "workspace:*",
     "@repo/calendar": "workspace:*",
     "@repo/code-block": "workspace:*",
     "@repo/color-picker": "workspace:*",
+    "@repo/dropzone": "workspace:*",
     "@repo/editor": "workspace:*",
     "@repo/list": "workspace:*",
     "@repo/gantt": "workspace:*",
@@ -70,5 +72,10 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.8",
     "typescript": "^5.7.3"
+  },
+  "overrides": {
+    "tailwindcss": {
+      "tailwindcss": "4.0.8"
+    }
   }
 }

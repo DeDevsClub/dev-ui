@@ -74,6 +74,11 @@ const config = {
         permanent: true,
       },
       {
+        source: '/bento',
+        destination: '/components/bento',
+        permanent: true,
+      },
+      {
         source: '/announcement',
         destination: '/components/announcement',
         permanent: true,
@@ -87,6 +92,11 @@ const config = {
       {
         source: '/color-picker',
         destination: '/components/color-picker',
+        permanent: true,
+      },
+      {
+        source: '/dropzone',
+        destination: '/components/dropzone',
         permanent: true,
       },
       { source: '/editor', destination: '/components/editor', permanent: true },

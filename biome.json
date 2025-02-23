@@ -12,6 +12,9 @@
     "rules": {
       "suspicious": {
         "noConsoleLog": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "off"
       }
     }
   }

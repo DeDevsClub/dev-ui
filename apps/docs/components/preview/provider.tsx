@@ -13,7 +13,8 @@ export const PreviewProvider = ({
   options,
   ...props
 }: PreviewProviderProps) => {
-  const { resolvedTheme } = useTheme();
+  const { theme } = useTheme();
+  const darkTheme = theme === 'dark' ? 'dark' : 'dark';
 
   if (typeof window === 'undefined') {
     return null;
@@ -21,7 +22,7 @@ export const PreviewProvider = ({
 
   return (
     <SandboxProvider
-      theme={resolvedTheme === 'dark' ? 'dark' : 'light'}
+      theme={darkTheme}
       {...props}
       options={{
         ...options,

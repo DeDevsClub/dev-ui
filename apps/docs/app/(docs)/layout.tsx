@@ -1,10 +1,16 @@
 import { DocsLayout } from 'fumadocs-ui/layouts/notebook';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import type { ReactNode } from 'react';
 import { source } from '../../lib/source';
-
 type LayoutProps = {
   readonly children: ReactNode;
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || 'https://ui.dedevs.club'
+  ),
 };
 
 const Layout = ({ children }: LayoutProps) => (
