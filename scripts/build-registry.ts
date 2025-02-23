@@ -50,7 +50,7 @@ const buildRegistry = async (pkg: string) => {
         type: 'registry:ui',
         path: file.name,
         content,
-        target: `components/ui/dev-ui/${pkg}/${file.name}`,
+        target: `components/ui/dedevs-ui/${pkg}/${file.name}`,
       };
     });
 
@@ -66,7 +66,7 @@ const buildRegistry = async (pkg: string) => {
   const json = JSON.stringify(
     {
       $schema: 'https://ui.shadcn.com/schema/registry.json',
-      homepage: `https://devui.dedevs.club/${pkg}`,
+      homepage: `https://ui.dedevs.club/${pkg}`,
       name: pkg,
       type: 'registry:ui',
       author: 'DeDevsClub <admin@dedevs.club>',

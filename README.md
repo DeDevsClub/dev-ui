@@ -1,7 +1,7 @@
-# DevUI
+# DeDevs UI
 
-Dev UI is a UI toolkit for developer documentation and productivity tooling.
+DeDevs UI is a UI toolkit for developer documentation and productivity tooling.
 
 ## Installation
 
-[Read the docs](https://devui.dedevs.club)
+[Read the docs](https://ui.dedevs.club)

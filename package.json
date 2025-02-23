@@ -1,13 +1,13 @@
 {
-  "name": "dev-ui",
+  "name": "dedevs-ui",
   "version": "0.1.0",
   "description": "UI toolkit for developer documentation and productivity tooling.",
   "main": "index.js",
-  "repository": "https://github.com/DeDevsClub/dev-ui.git",
+  "repository": "https://github.com/DeDevsClub/dedevs-ui.git",
   "author": "DeDevsClub <admin@dedevs.club>",
   "license": "MIT",
   "bin": {
-    "dev-ui": "dist/index.js"
+    "dedevs-ui": "dist/index.js"
   },
   "files": ["dist/index.js"],
   "scripts": {

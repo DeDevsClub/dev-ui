@@ -5,7 +5,7 @@ import { execSync } from 'node:child_process';
 const args = process.argv.slice(2);
 
 if (args.length < 2 || args[0] !== 'add') {
-  process.stdout.write('Usage: npx dev-ui add [...packages]\n');
+  process.stdout.write('Usage: npx dedevs-ui add [...packages]\n');
   process.exit(1);
 }
 
@@ -18,10 +18,7 @@ for (const packageName of packageNames) {
 
   process.stdout.write(`Adding ${packageName} component...\n`);
 
-  const url = new URL(
-    `registry/${packageName}.json`,
-    'https://devui.dedevs.club'
-  );
+  const url = new URL(`registry/${packageName}.json`, 'https://ui.dedevs.club');
 
   execSync(`npx shadcn@latest add ${url.toString()}`);
 }

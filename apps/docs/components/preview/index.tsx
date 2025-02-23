@@ -48,7 +48,7 @@ const registryCache = new Map<string, RegistryItem>();
 // Regexes to parse dependencies, registry, and components
 const dependencyRegex = /^(.+?)(?:@(.+))?$/;
 const registryRegex = /@\/registry\/new-york\/ui\//g;
-const devuiRegex = /@\/components\/ui\/(?!dev-ui\/)([^'"\s]+)/g;
+const dedevsuiRegex = /@\/components\/ui\/(?!dedevs-ui\/)([^'"\s]+)/g;
 
 const parseDependencyVersion = (dependency: string) => {
   const [name, version] =
@@ -94,7 +94,7 @@ const processComponentModule = async (
 
 const parseShadcnComponents = async (str: string) => {
   const parsedString = parseContent(str);
-  const matches = parsedString.match(devuiRegex);
+  const matches = parsedString.match(dedevsuiRegex);
 
   const result = {
     files: {} as Record<string, string>,
@@ -195,7 +195,7 @@ export const Preview = async ({
     );
   }
 
-  files[`/components/ui/dev-ui/${name}.tsx`] = parseContent(
+  files[`/components/ui/dedevs-ui/${name}.tsx`] = parseContent(
     selectedComponentContent
   );
 

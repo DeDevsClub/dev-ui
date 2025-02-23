@@ -12,7 +12,7 @@ import { track } from '@vercel/analytics/react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import devui from '../public/logomark.svg';
+import dedevsui from '../public/logomark.svg';
 import shadcn from '../public/shadcn.svg';
 
 type InstallerProps = {
@@ -20,16 +20,16 @@ type InstallerProps = {
 };
 
 export const Installer = ({ packageName }: InstallerProps) => {
-  const [value, setValue] = useState('dev-ui');
+  const [value, setValue] = useState('dedevs-ui');
 
   const commands = {
-    'dev-ui': {
-      image: devui,
-      code: `npx dev-ui@latest add ${packageName}`,
+    'dedevs-ui': {
+      image: dedevsui,
+      code: `npx dedevs-ui@latest add ${packageName}`,
     },
     shadcn: {
       image: shadcn,
-      code: `npx shadcn@latest add https://devui.dedevs.club/registry/${packageName}.json`,
+      code: `npx shadcn@latest add https://ui.dedevs.club/registry/${packageName}.json`,
     },
   };
 

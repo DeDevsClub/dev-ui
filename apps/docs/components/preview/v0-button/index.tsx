@@ -7,7 +7,7 @@ import Logo from './logo.svg';
 export const V0Button = ({ name }: { name: string }) => {
   const registryUrl = new URL(
     `/registry/${name}.json`,
-    'https://devui.dedevs.club/'
+    'https://ui.dedevs.club/'
   );
   const v0Url = new URL('https://v0.dev/chat/api/open');
 
