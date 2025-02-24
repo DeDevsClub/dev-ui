@@ -39,8 +39,9 @@
       - editor
     - tables
       - standard
-    - database
-      - input
-        - password
-      - select
-        - dropdown
+    - input
+      - password
+    - select
+      - dropdown
+    - page
+      - footer

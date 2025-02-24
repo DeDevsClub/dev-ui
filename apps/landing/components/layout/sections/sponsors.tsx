@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import { Icon } from "@/components/ui/icon";
-import { Marquee } from "@devnomic/marquee";
-import "@devnomic/marquee/dist/index.css";
-import { icons } from "lucide-react";
+import { Icon } from '@/components/ui/icon';
+import { Marquee } from '@devnomic/marquee';
+import '@devnomic/marquee/dist/index.css';
+import type { icons } from 'lucide-react';
+
 interface sponsorsProps {
   icon: string;
   name: string;
@@ -11,32 +12,32 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: "Crown",
-    name: "Acmebrand",
+    icon: 'Crown',
+    name: 'Acmebrand',
   },
   {
-    icon: "Vegan",
-    name: "Acmelogo",
+    icon: 'Vegan',
+    name: 'Acmelogo',
   },
   {
-    icon: "Ghost",
-    name: "Acmesponsor",
+    icon: 'Ghost',
+    name: 'Acmesponsor',
   },
   {
-    icon: "Puzzle",
-    name: "Acmeipsum",
+    icon: 'Puzzle',
+    name: 'Acmeipsum',
   },
   {
-    icon: "Squirrel",
-    name: "Acme",
+    icon: 'Squirrel',
+    name: 'Acme',
   },
   {
-    icon: "Cookie",
-    name: "Accmee",
+    icon: 'Cookie',
+    name: 'Accmee',
   },
   {
-    icon: "Drama",
-    name: "Acmetech",
+    icon: 'Drama',
+    name: 'Acmetech',
   },
 ];
 

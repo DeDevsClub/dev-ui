@@ -1,12 +1,11 @@
 {
-  "name": "@repo/charts",
+  "name": "@repo/cards",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@repo/shadcn-ui": "workspace:*",
     "@tanstack/react-table": "^8.21.2",
     "lucide-react": "^0.475.0",
-    "recharts": "^2.15.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

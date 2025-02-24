@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Icon } from '@/components/ui/icon';
+import type { icons } from 'lucide-react';
 
 interface FeaturesProps {
   icon: string;
@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: 'TabletSmartphone',
+    title: 'Mobile Friendly',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.',
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: 'BadgeCheck',
+    title: 'Social Proof',
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      'Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.',
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: 'Goal',
+    title: 'Targeted Content',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.',
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: 'PictureInPicture',
+    title: 'Strong Visuals',
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      'Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.',
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: 'MousePointerClick',
+    title: 'Clear CTA',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.',
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: 'Newspaper',
+    title: 'Clear Headline',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.',
   },
 ];
 

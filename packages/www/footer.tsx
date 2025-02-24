@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/bunsdev"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   GitHub

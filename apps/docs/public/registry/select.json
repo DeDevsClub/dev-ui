@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://ui.dedevs.club/select",
+  "name": "select",
+  "type": "registry:ui",
+  "author": "DeDevsClub <admin@dedevs.club>",
+  "registryDependencies": [
+    "form",
+    "select"
+  ],
+  "dependencies": [
+    "@repo/typescript-config",
+    "@tabler/icons-react",
+    "@tanstack/react-table",
+    "jotai",
+    "lucide-react",
+    "react-markdown",
+    "remark-gfm"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "dropdown.tsx",
+      "content": "import { IconLoader } from '@tabler/icons-react';\nimport { cn } from '@/lib/utils';\nimport { FormControl } from '@/components/ui/form';\nimport {\n  Select,\n  SelectContent,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from '@/components/ui/select';\n\ninterface DropdownSelectProps {\n  onValueChange?: (value: string) => void;\n  defaultValue: string | undefined;\n  placeholder?: string;\n  isPending?: boolean;\n  items: { label: string; value: string }[] | undefined;\n  disabled?: boolean;\n  className?: string;\n  isControlled?: boolean;\n}\n\nexport function DropdownSelect({\n  defaultValue,\n  onValueChange,\n  isPending,\n  items,\n  placeholder,\n  disabled,\n  className = '',\n  isControlled = false,\n}: DropdownSelectProps) {\n  const defaultState = isControlled\n    ? { value: defaultValue, onValueChange }\n    : { defaultValue, onValueChange };\n  return (\n    <Select {...defaultState}>\n      <FormControl>\n        <SelectTrigger disabled={disabled} className={cn(className)}>\n          <SelectValue placeholder={placeholder ?? 'Select'} />\n        </SelectTrigger>\n      </FormControl>\n      <SelectContent>\n        {isPending ? (\n          <SelectItem disabled value=\"loading\" className=\"h-14\">\n            <div className=\"flex items-center justify-center gap-2\">\n              <IconLoader className=\"h-5 w-5 animate-spin\" />\n              {'  '}\n              Loading...\n            </div>\n          </SelectItem>\n        ) : (\n          items?.map(({ label, value }) => (\n            <SelectItem key={value} value={value}>\n              {label}\n            </SelectItem>\n          ))\n        )}\n      </SelectContent>\n    </Select>\n  );\n}\n",
+      "target": "components/ui/dedevs-ui/select/dropdown.tsx"
+    }
+  ]
+}

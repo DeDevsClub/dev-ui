@@ -74,13 +74,13 @@ const config = {
     return [
       {
         source: '/',
-        destination: '/components/announcement',
-        permanent: false,
+        destination: '/components/interface/announcement',
+        permanent: true,
       },
       {
         source: '/components',
-        destination: '/components/announcement',
-        permanent: false,
+        destination: '/components/interface/announcement',
+        permanent: true,
       },
       { source: '/ai', destination: '/components/ai', permanent: true },
       {
@@ -90,15 +90,19 @@ const config = {
       },
       {
         source: '/bento',
-        destination: '/components/bento',
+        destination: '/components/productivity/bento',
         permanent: true,
       },
       {
         source: '/announcement',
-        destination: '/components/announcement',
+        destination: '/components/interface/announcement',
         permanent: true,
       },
-      { source: '/banner', destination: '/components/banner', permanent: true },
+      {
+        source: '/banner',
+        destination: '/components/interface/banner',
+        permanent: true,
+      },
       {
         source: '/code/block',
         destination: '/components/code/block',
@@ -106,7 +110,7 @@ const config = {
       },
       {
         source: '/color-picker',
-        destination: '/components/color-picker',
+        destination: '/components/interface/color-picker',
         permanent: true,
       },
       {
@@ -121,7 +125,7 @@ const config = {
       },
       {
         source: '/dropzone',
-        destination: '/components/dropzone',
+        destination: '/components/interface/dropzone',
         permanent: true,
       },
       {
@@ -129,7 +133,11 @@ const config = {
         destination: '/components/code/editor',
         permanent: true,
       },
-      { source: '/list', destination: '/components/list', permanent: true },
+      {
+        source: '/list',
+        destination: '/components/productivity/list',
+        permanent: true,
+      },
       { source: '/pages', destination: '/components/pages', permanent: true },
       {
         source: '/pages/:slug*',
@@ -138,42 +146,42 @@ const config = {
       },
       {
         source: '/sandbox',
-        destination: '/components/sandbox',
+        destination: '/components/code/sandbox',
         permanent: true,
       },
       {
         source: '/snippet',
-        destination: '/components/snippet',
+        destination: '/components/code/snippet',
         permanent: true,
       },
       {
         source: '/tables',
-        destination: '/components/tables',
+        destination: '/components/database/table',
         permanent: true,
       },
       {
         source: '/tables/:slug*',
-        destination: '/components/tables/:slug*',
+        destination: '/components/database/table/:slug*',
         permanent: true,
       },
       {
         source: '/transactions',
-        destination: '/components/transactions',
+        destination: '/components/database/transaction',
         permanent: true,
       },
       {
         source: '/transactions/:slug*',
-        destination: '/components/transactions/:slug*',
+        destination: '/components/database/transaction/:slug*',
         permanent: true,
       },
       {
         source: '/www',
-        destination: '/components/www',
+        destination: '/components/pages/www',
         permanent: true,
       },
       {
         source: '/www/:slug*',
-        destination: '/components/www/:slug*',
+        destination: '/components/pages/www/:slug*',
         permanent: true,
       },
     ];

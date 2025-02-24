@@ -21,6 +21,8 @@
     "@repo/code": "workspace:*",
     "@repo/color-picker": "workspace:*",
     "@repo/database": "workspace:*",
+    "@repo/input": "workspace:*",
+    "@repo/select": "workspace:*",
     "@repo/dropzone": "workspace:*",
     "@repo/events": "workspace:*",
     "@repo/gantt": "workspace:*",
