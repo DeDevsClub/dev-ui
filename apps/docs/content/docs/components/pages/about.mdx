@@ -1,0 +1,44 @@
+---
+title: About
+description: The About component is a simple component that allows you to display information about the Quinx platform. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines.
+icon: Page
+---
+
+<PoweredBy packages={[
+  { name: 'React', url: 'https://reactjs.org/' },
+]} />
+
+<Preview name="pages/about" code={`'use client';
+
+import { useState } from 'react';
+import { About } from '@/components/ui/dedevs-ui/pages/about';
+
+const Example = () => {
+  return (
+    <div className="flex w-full h-screen items-center justify-center bg-primary text-black p-8">
+      <About
+        title="About Quinx"
+        mission="Quinx was founded with a simple mission: to democratize Discord bot creation. We believe that everyone should have the power to enhance their Discord communities, regardless of their coding skills."
+        description="Our platform combines cutting-edge technology with an intuitive interface, allowing you to build sophisticated bots that would typically require extensive programming knowledge. With Quinx, you're limited only by your imagination."
+      />
+    </div>
+  );
+}
+
+export default Example;
+`} />
+
+## Installation
+
+<Installer packageName="pages/about" />
+
+
+## Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `title` | `string` | `'About Quinx'` | The title of the about page |
+| `mission` | `string` | `'Quinx was founded with a simple mission: to democratize Discord bot creation. We believe that everyone should have the power to enhance their Discord communities, regardless of their coding skills.'` | The mission of the about page |
+| `description` | `string` | `'Our platform combines cutting-edge technology with an intuitive interface, allowing you to build sophisticated bots that would typically require extensive programming knowledge. With Quinx, you're limited only by your imagination.'` | The description of the about page |
+
+<AutoTypeTable path="node_modules/@repo/pages/about.tsx" name="AboutProps" />

@@ -9,11 +9,13 @@ interface PasswordRequirement {
   test: (value: string) => boolean;
 }
 
-export interface InputPasswordProps {
+export interface PasswordInputProps {
+  placeholder?: string;
   label?: string;
   value?: string;
   setValue?: (value: string) => void;
   requirements?: PasswordRequirement[];
+  // className?: string;
 }
 
 const defaultPasswordRequirements: PasswordRequirement[] = [
@@ -27,14 +29,15 @@ const defaultPasswordRequirements: PasswordRequirement[] = [
   },
 ];
 
-const InputPassword = ({
+const PasswordInput = ({
   label = 'Password',
   value = '',
+  placeholder = 'Enter your password',
   setValue,
   requirements = defaultPasswordRequirements,
-}: InputPasswordProps) => {
+  // className,
+}: PasswordInputProps) => {
   const [showPassword, setShowPassword] = useState(false);
-
   const getStrength = (value: string): number => {
     if (!value) {
       return 0;
@@ -66,7 +69,7 @@ const InputPassword = ({
           onChange={(e) => {
             setValue?.(e.target.value);
           }}
-          placeholder="Enter your password"
+          placeholder={placeholder}
           className={cn(
             'w-full px-3 py-2 pr-10',
             'rounded-md border',
@@ -123,4 +126,4 @@ const InputPassword = ({
   );
 };
 
-export { InputPassword };
+export { PasswordInput };

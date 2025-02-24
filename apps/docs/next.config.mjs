@@ -130,6 +130,12 @@ const config = {
         permanent: true,
       },
       { source: '/list', destination: '/components/list', permanent: true },
+      { source: '/pages', destination: '/components/pages', permanent: true },
+      {
+        source: '/pages/:slug*',
+        destination: '/components/pages/:slug*',
+        permanent: true,
+      },
       {
         source: '/sandbox',
         destination: '/components/sandbox',
@@ -138,6 +144,36 @@ const config = {
       {
         source: '/snippet',
         destination: '/components/snippet',
+        permanent: true,
+      },
+      {
+        source: '/tables',
+        destination: '/components/tables',
+        permanent: true,
+      },
+      {
+        source: '/tables/:slug*',
+        destination: '/components/tables/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/transactions',
+        destination: '/components/transactions',
+        permanent: true,
+      },
+      {
+        source: '/transactions/:slug*',
+        destination: '/components/transactions/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/www',
+        destination: '/components/www',
+        permanent: true,
+      },
+      {
+        source: '/www/:slug*',
+        destination: '/components/www/:slug*',
         permanent: true,
       },
     ];

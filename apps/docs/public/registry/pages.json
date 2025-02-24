@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://ui.dedevs.club/pages",
+  "name": "pages",
+  "type": "registry:ui",
+  "author": "DeDevsClub <admin@dedevs.club>",
+  "registryDependencies": [],
+  "dependencies": [
+    "@repo/www",
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "about.tsx",
+      "content": "import React from 'react';\nimport type { FC } from 'react';\n\nexport interface AboutProps {\n  title: string;\n  mission: string;\n  description: string;\n}\n\nexport const About: FC<AboutProps> = ({ title, mission, description }) => {\n  return (\n    <section id=\"about\" className=\"py-20 bg-gray-100\">\n      <div className=\"container mx-auto px-4\">\n        <h2 className=\"text-4xl font-bold text-center mb-12\">{title}</h2>\n        <div className=\"max-w-3xl mx-auto text-center\">\n          <p className=\"text-xl mb-8\">{mission}</p>\n          <p className=\"text-xl\">{description}</p>\n        </div>\n      </div>\n    </section>\n  );\n};\n\n// Usage example\n// <About\n//   title=\"About Quinx\"\n//   mission=\"Quinx was founded with a simple mission: to democratize Discord bot creation. We believe that everyone should have the power to enhance their Discord communities, regardless of their coding skills.\"\n//   description=\"Our platform combines cutting-edge technology with an intuitive interface, allowing you to build sophisticated bots that would typically require extensive programming knowledge. With Quinx, you're limited only by your imagination.\"\n// />\n",
+      "target": "components/ui/dedevs-ui/pages/about.tsx"
+    }
+  ]
+}

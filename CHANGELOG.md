@@ -33,10 +33,14 @@
 # v0.1.3 (Mon 24 Feb 2025)
   - Components:
     - chatv0
-    - input-password
     - pill
     - code
       - block
       - editor
     - tables
       - standard
+    - database
+      - input
+        - password
+      - select
+        - dropdown

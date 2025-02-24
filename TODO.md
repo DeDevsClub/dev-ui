@@ -7,11 +7,11 @@
   - **Details**: Completed input component for AI interactions. 
 
 ## Code
-- [x] [**Code Block**](`packages/code-block`)
+- [x] [**Block**](`packages/code/block.tsx`)
   - **Details**: Syntax highlighting and code formatting. 
 - [x] [**Color Picker**](`packages/color-picker`)
   - **Details**: Tool for selecting and applying colors. 
-- [x] [**Editor**](`packages/editor`)
+- [x] [**Editor**](`packages/code/editor.tsx`)
   - **Details**: Rich text editor for content creation. 
 - [x] [**Sandbox**](`packages/sandbox`)
   - **Details**: Environment for testing and running code snippets. 

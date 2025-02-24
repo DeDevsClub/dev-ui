@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://ui.dedevs.club/www",
+  "name": "www",
+  "type": "registry:ui",
+  "author": "DeDevsClub <admin@dedevs.club>",
+  "registryDependencies": [],
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "footer.tsx",
+      "content": "import Link from 'next/link';\n\nconst Footer = () => {\n  return (\n    <footer className=\"bg-gray-900 text-white py-12\">\n      <div className=\"container mx-auto px-4\">\n        <div className=\"grid grid-cols-1 md:grid-cols-4 gap-8\">\n          <div>\n            <h3 className=\"text-lg font-semibold mb-4\">Quinx</h3>\n            <p className=\"text-gray-400\">\n              Building the future of Discord bots, one click at a time.\n            </p>\n          </div>\n          <div>\n            <h4 className=\"text-lg font-semibold mb-4\">Quick Links</h4>\n            <ul className=\"space-y-2\">\n              <li>\n                <Link\n                  href=\"#features\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Features\n                </Link>\n              </li>\n              <li>\n                <Link\n                  href=\"#pricing\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Pricing\n                </Link>\n              </li>\n              <li>\n                <Link\n                  href=\"#about\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  About\n                </Link>\n              </li>\n              <li>\n                <Link\n                  href=\"#contact\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Contact\n                </Link>\n              </li>\n            </ul>\n          </div>\n          <div>\n            <h4 className=\"text-lg font-semibold mb-4\">Legal</h4>\n            <ul className=\"space-y-2\">\n              <li>\n                <Link\n                  href=\"/terms\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Terms of Service\n                </Link>\n              </li>\n              <li>\n                <Link\n                  href=\"/privacy\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Privacy Policy\n                </Link>\n              </li>\n            </ul>\n          </div>\n          <div>\n            <h4 className=\"text-lg font-semibold mb-4\">Connect</h4>\n            <ul className=\"space-y-2\">\n              <li>\n                <a\n                  href=\"https://x.com/0xbuns\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  X\n                </a>\n              </li>\n              <li>\n                <a\n                  href=\"#\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  GitHub\n                </a>\n              </li>\n              <li>\n                <a\n                  href=\"https://t.me/bunsdev\"\n                  className=\"text-gray-400 hover:text-white transition-colors\"\n                >\n                  Discord\n                </a>\n              </li>\n            </ul>\n          </div>\n        </div>\n        <div className=\"mt-8 pt-8 border-t border-gray-800 text-center text-gray-400\">\n          <p>&copy; {new Date().getFullYear()} Quinx. All rights reserved.</p>\n        </div>\n      </div>\n    </footer>\n  );\n};\n\nexport default Footer;\n",
+      "target": "components/ui/dedevs-ui/www/footer.tsx"
+    }
+  ]
+}
