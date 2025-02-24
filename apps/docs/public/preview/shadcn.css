@@ -85,9 +85,10 @@
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto !important;
     font-style: normal !important;
     @apply !antialiased;
+    background-color: var(--background) !important;
   }
 }

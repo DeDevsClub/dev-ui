@@ -61,7 +61,7 @@ const Example = () => {
   };
 
   return (
-    <KanbanProvider onDragEnd={handleDragEnd} className="p-4">
+    <KanbanProvider onDragEnd={handleDragEnd} className="p-4 bg-primary">
       {exampleStatuses.map((status) => (
         <KanbanBoard key={status.name} id={status.name}>
           <KanbanHeader name={status.name} color={status.color} />
@@ -164,7 +164,7 @@ const Example = () => {
   };
 
   return (
-    <KanbanProvider onDragEnd={handleDragEnd} className="p-4">
+    <KanbanProvider onDragEnd={handleDragEnd} className="p-4 bg-primary">
       {exampleStatuses.map((status) => (
         <KanbanBoard key={status.name} id={status.name}>
           <KanbanHeader name={status.name} color={status.color} />

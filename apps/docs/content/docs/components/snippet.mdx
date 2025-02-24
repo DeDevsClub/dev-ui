@@ -40,7 +40,7 @@ const Example = () => {
   const activeCommand = commands.find((command) => command.label === value);
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-primary h-screen w-full flex items-center justify-center">
       <Snippet value={value} onValueChange={setValue}>
         <SnippetHeader>
           <SnippetTabsList>
@@ -127,7 +127,7 @@ const Example = () => {
   const activeCommand = commands.find((command) => command.label === value);
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-primary h-screen w-full flex items-center justify-center">
       <Snippet value={value} onValueChange={setValue}>
         <SnippetHeader>
           <SnippetTabsList>

@@ -24,6 +24,8 @@
   - kanban
 
 
-  # Next
+# v0.1.2 (Mon 24 Feb 2025)
   - Components:
-    - dropzone
+    - input-password
+    - transactions
+    - bento grid

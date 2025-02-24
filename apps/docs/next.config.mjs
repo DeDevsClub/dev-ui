@@ -57,11 +57,14 @@ const config = {
     ],
   },
   staticPageGenerationTimeout: 180,
-
   // biome-ignore lint/suspicious/useAwait: "redirects is async"
   async redirects() {
     return [
-      { source: '/', destination: '/overview', permanent: false },
+      {
+        source: '/',
+        destination: '/components/announcement',
+        permanent: false,
+      },
       {
         source: '/components',
         destination: '/components/announcement',

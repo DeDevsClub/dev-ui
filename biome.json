@@ -11,10 +11,24 @@
   "linter": {
     "rules": {
       "suspicious": {
-        "noConsoleLog": "off"
+        "noConsoleLog": "off",
+        "noConsole": "off"
       },
       "nursery": {
+        "noNestedTernary": "off",
         "useSortedClasses": "off"
+      },
+      "a11y": {
+        "useButtonType": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "off"
+      },
+      "complexity": {
+        "noUselessLoneBlockStatements": "off"
+      },
+      "performance": {
+        "useTopLevelRegex": "off"
       }
     }
   }

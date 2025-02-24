@@ -53,8 +53,8 @@ const Example = () => {
   return (
     <ListProvider onDragEnd={handleDragEnd}>
       {exampleStatuses.map((status) => (
-        <ListGroup key={status.name} id={status.name}>
-          <ListHeader name={status.name} color={status.color} />
+        <ListGroup key={status.name} id={status.name} className="bg-primary">
+          <ListHeader name={status.name} color={status.color} className="text-white"/>
           <ListItems>
             {features
               .filter((feature) => feature.status.name === status.name)
@@ -149,8 +149,8 @@ const Example = () => {
   return (
     <ListProvider onDragEnd={handleDragEnd}>
       {exampleStatuses.map((status) => (
-        <ListGroup key={status.name} id={status.name}>
-          <ListHeader name={status.name} color={status.color} />
+        <ListGroup key={status.name} id={status.name} className="bg-primary">
+          <ListHeader name={status.name} color={status.color} className="text-white"/>
           <ListItems>
             {features
               .filter((feature) => feature.status.name === status.name)

@@ -20,6 +20,7 @@
     "@tiptap/extension-placeholder",
     "@tiptap/extension-subscript",
     "@tiptap/extension-superscript",
+    "@tiptap/extension-text-style",
     "@tiptap/extension-table",
     "@tiptap/extension-table-cell",
     "@tiptap/extension-table-header",

@@ -14,7 +14,7 @@ import { Banner, BannerClose, BannerIcon, BannerTitle, BannerAction } from '@/co
 import { CircleAlert } from 'lucide-react';
 
 const Example = () => (
-  <div className="flex w-full h-screen items-center justify-center">
+  <div className="flex w-full h-screen items-center justify-center bg-primary">
     <Banner>
       <BannerIcon icon={CircleAlert} />
       <BannerTitle>Important message</BannerTitle>
@@ -50,7 +50,7 @@ import { Banner, BannerClose, BannerIcon, BannerTitle, BannerAction } from '@/co
 import { CircleAlert } from 'lucide-react';
 
 const Example = () => (
-  <div className="flex w-full h-screen items-center justify-center p-8">
+  <div className="flex w-full h-screen items-center justify-center p-8 bg-primary">
     <Banner inset>
       <BannerIcon icon={CircleAlert} />
       <BannerTitle>Important message</BannerTitle>
@@ -62,7 +62,7 @@ const Example = () => (
 
 export default Example;`} />
 
-### Different primary colors
+### Different Primary Colors
 
 <Preview name="banner" code={`'use client';
 
@@ -70,7 +70,7 @@ import { Banner, BannerClose, BannerIcon, BannerTitle, BannerAction } from '@/co
 import { CircleAlert } from 'lucide-react';
 
 const Example = () => (
-  <div className="flex w-full h-screen items-center justify-center flex-col gap-4">
+  <div className="flex w-full h-screen items-center justify-center flex-col gap-4 bg-primary">
     <div className="w-full" style={{
       '--primary': '0 72.2% 50.6%',
       '--primary-foreground': '0 85.7% 97.3%',

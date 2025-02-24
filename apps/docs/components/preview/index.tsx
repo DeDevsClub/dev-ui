@@ -127,7 +127,9 @@ const parseShadcnComponents = async (str: string) => {
           result.devDependencies
         );
       } catch (error) {
-        console.warn(`Failed to load shadcn component: ${component}`);
+        console.warn(
+          `Failed to load shadcn component: ${component} returned ${error}`
+        );
       }
     })
   );
@@ -253,10 +255,10 @@ export const Preview = async ({
               <AppWindowIcon size={14} />
               Preview
             </SandboxTabsTrigger>
-            <SandboxTabsTrigger value="console">
+            {/* <SandboxTabsTrigger value="console">
               <TerminalIcon size={14} />
               Console
-            </SandboxTabsTrigger>
+            </SandboxTabsTrigger> */}
           </SandboxTabsList>
           <V0Button name={name} />
           <SandboxTabsContent value="code" className="overflow-hidden">
@@ -279,11 +281,11 @@ export const Preview = async ({
             </ResizablePanelGroup>
           </SandboxTabsContent>
           <SandboxTabsContent value="preview">
-            <SandboxPreview />
+            <SandboxPreview className="bg-primary dark:bg-secondary" />
           </SandboxTabsContent>
-          <SandboxTabsContent value="console">
-            <SandboxConsole />
-          </SandboxTabsContent>
+          {/* <SandboxTabsContent value="console"> */}
+          {/* <SandboxConsole /> */}
+          {/* </SandboxTabsContent> */}
         </SandboxTabs>
       </SandboxLayout>
     </PreviewProvider>

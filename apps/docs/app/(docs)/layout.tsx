@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 const Layout = ({ children }: LayoutProps) => (
   <DocsLayout
     tree={source.pageTree}
-    tabMode="navbar"
-    sidebar={{ collapsible: false }}
+    tabMode="sidebar"
+    sidebar={{ collapsible: true }}
     nav={{
       title: (
         <Image

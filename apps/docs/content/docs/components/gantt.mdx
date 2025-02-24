@@ -93,7 +93,7 @@ const Example = () => {
     console.log(\`Add feature: \${date.toISOString()}\`);
 
   return (
-    <GanttProvider onAddItem={handleAddFeature} range="monthly" zoom={100}>
+    <GanttProvider onAddItem={handleAddFeature} range="monthly" zoom={100} className="bg-primary">
       <GanttSidebar>
         {Object.entries(sortedGroupedFeatures).map(([group, features]) => (
           <GanttSidebarGroup key={group} name={group}>
@@ -279,7 +279,7 @@ const Example = () => {
     console.log(\`Add feature: \${date.toISOString()}\`);
 
   return (
-    <GanttProvider onAddItem={handleAddFeature} range="monthly" zoom={100} className="h-screen">
+    <GanttProvider onAddItem={handleAddFeature} range="monthly" zoom={50} className="h-screen bg-primary">
       <GanttTimeline>
         <GanttHeader />
         <GanttFeatureList>
@@ -396,7 +396,7 @@ const Example = () => {
   );
 
   return (
-    <GanttProvider range="monthly" zoom={100}>
+    <GanttProvider range="monthly" zoom={75} className="bg-primary">
       <GanttSidebar>
         {Object.entries(sortedGroupedFeatures).map(([group, features]) => (
           <GanttSidebarGroup key={group} name={group}>

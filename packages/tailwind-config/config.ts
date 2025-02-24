@@ -3,7 +3,7 @@ import animate from 'tailwindcss-animate';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
 export const config: Config = {
-  darkMode: ['class', 'dark'],
+  darkMode: ['variant', '[data-mode="dark"]'],
   content: [],
   theme: {
     container: {
@@ -11,6 +11,11 @@ export const config: Config = {
       padding: '2rem',
       screens: {
         '2xl': '1400px',
+      },
+      backgroundColor: {
+        'background-primary': 'hsl(var(--background-primary) / <alpha-value>)',
+        'background-secondary':
+          'hsl(var(--background-secondary) / <alpha-value>)',
       },
     },
     extend: {

@@ -92,18 +92,18 @@ const Example = () => {
   ];
 
   return (
-    <TableProvider columns={columns} data={exampleFeatures}>
+    <TableProvider columns={columns} data={exampleFeatures} className="bg-primary">
       <TableHeader>
         {({ headerGroup }) => (
           <TableHeaderGroup key={headerGroup.id} headerGroup={headerGroup}>
-            {({ header }) => <TableHead key={header.id} header={header} />}
+            {({ header }) => <TableHead key={header.id} header={header} className="text-white" />}
           </TableHeaderGroup>
         )}
       </TableHeader>
       <TableBody>
         {({ row }) => (
           <TableRow key={row.id} row={row}>
-            {({ cell }) => <TableCell key={cell.id} cell={cell} />}
+            {({ cell }) => <TableCell key={cell.id} cell={cell} className="text-white" />}
           </TableRow>
         )}
       </TableBody>
@@ -195,18 +195,18 @@ const Example = () => {
   ];
 
   return (
-    <TableProvider columns={columns} data={exampleFeatures}>
+    <TableProvider columns={columns} data={exampleFeatures} className="bg-primary">
       <TableHeader>
         {({ headerGroup }) => (
           <TableHeaderGroup key={headerGroup.id} headerGroup={headerGroup}>
-            {({ header }) => <TableHead key={header.id} header={header} />}
+            {({ header }) => <TableHead key={header.id} header={header} className="text-white" />}
           </TableHeaderGroup>
         )}
       </TableHeader>
       <TableBody>
         {({ row }) => (
           <TableRow key={row.id} row={row}>
-            {({ cell }) => <TableCell key={cell.id} cell={cell} />}
+            {({ cell }) => <TableCell key={cell.id} cell={cell} className="text-white" />}
           </TableRow>
         )}
       </TableBody>
