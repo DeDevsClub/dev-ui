@@ -9,7 +9,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
-interface DropdownSelectProps {
+export interface DropdownSelectProps {
   onValueChange?: (value: string) => void;
   defaultValue: string | undefined;
   placeholder?: string;
