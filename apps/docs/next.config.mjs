@@ -100,8 +100,8 @@ const config = {
       },
       { source: '/banner', destination: '/components/banner', permanent: true },
       {
-        source: '/code-block',
-        destination: '/components/code-block',
+        source: '/code/block',
+        destination: '/components/code/block',
         permanent: true,
       },
       {
@@ -124,7 +124,11 @@ const config = {
         destination: '/components/dropzone',
         permanent: true,
       },
-      { source: '/editor', destination: '/components/editor', permanent: true },
+      {
+        source: '/code/editor',
+        destination: '/components/code/editor',
+        permanent: true,
+      },
       { source: '/list', destination: '/components/list', permanent: true },
       {
         source: '/sandbox',

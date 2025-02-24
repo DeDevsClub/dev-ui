@@ -35,3 +35,8 @@
     - chatv0
     - input-password
     - pill
+    - code
+      - block
+      - editor
+    - tables
+      - standard
