@@ -54,6 +54,18 @@ const config = {
         hostname: 'img.logo.dev',
         protocol: 'https',
       },
+      {
+        hostname: 'pbs.twimg.com',
+        protocol: 'https',
+      },
+      {
+        hostname: 'x.com',
+        protocol: 'https',
+      },
+      {
+        hostname: '*.dedevs.club',
+        protocol: 'https',
+      },
     ],
   },
   staticPageGenerationTimeout: 180,
@@ -95,6 +107,16 @@ const config = {
       {
         source: '/color-picker',
         destination: '/components/color-picker',
+        permanent: true,
+      },
+      {
+        source: '/database',
+        destination: '/components/database',
+        permanent: true,
+      },
+      {
+        source: '/database/:slug*',
+        destination: '/components/database/:slug*',
         permanent: true,
       },
       {

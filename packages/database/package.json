@@ -1,13 +1,17 @@
 {
-  "name": "@repo/dropzone",
+  "name": "@repo/database",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@repo/shadcn-ui": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@tanstack/react-table": "^8.21.2",
+    "jotai": "^2.12.1",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-dropzone": "^14.3.6"
+    "react-markdown": "^10.0.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

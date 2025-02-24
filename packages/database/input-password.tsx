@@ -9,7 +9,7 @@ interface PasswordRequirement {
   test: (value: string) => boolean;
 }
 
-interface InputPasswordProps {
+export interface InputPasswordProps {
   label?: string;
   value?: string;
   setValue?: (value: string) => void;
@@ -64,7 +64,7 @@ const InputPassword = ({
           type={showPassword ? 'text' : 'password'}
           value={value}
           onChange={(e) => {
-            setValue(e.target.value);
+            setValue?.(e.target.value);
           }}
           placeholder="Enter your password"
           className={cn(
@@ -123,4 +123,4 @@ const InputPassword = ({
   );
 };
 
-export default InputPassword;
+export { InputPassword };
