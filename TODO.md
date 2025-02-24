@@ -1,112 +1,79 @@
 # TODO
 
 ## AI
-- [ ] [**Chat**](`apps/ai/chat`)
-  - **Details**: Implement a chat interface for real-time communication.
-  - **Path**: 
+- [x] [**Chat**](`apps/ai/chatv0`)
+  - **Details**: Implement a chat interface for real-time communication. 
 - [x] [**Input**](`apps/ai/input`)
-  - **Details**: Completed input component for AI interactions.
-  - **Path**: 
+  - **Details**: Completed input component for AI interactions. 
 
 ## Code
 - [x] [**Code Block**](`packages/code-block`)
-  - **Details**: Syntax highlighting and code formatting.
-  - **Path**: 
+  - **Details**: Syntax highlighting and code formatting. 
 - [x] [**Color Picker**](`packages/color-picker`)
-  - **Details**: Tool for selecting and applying colors.
-  - **Path**: 
+  - **Details**: Tool for selecting and applying colors. 
 - [x] [**Editor**](`packages/editor`)
-  - **Details**: Rich text editor for content creation.
-  - **Path**: 
+  - **Details**: Rich text editor for content creation. 
 - [x] [**Sandbox**](`packages/sandbox`)
-  - **Details**: Environment for testing and running code snippets.
-  - **Path**: 
+  - **Details**: Environment for testing and running code snippets. 
 - [x] [**Snippet**](`packages/snippet`)
-  - **Details**: Manage and insert code snippets.
-  - **Path**: 
+  - **Details**: Manage and insert code snippets. 
 
 ## Productivity
 - [x] [**Calendar**](`packages/calendar`)
-  - **Details**: Calendar component for scheduling and events.
-  - **Path**: 
+  - **Details**: Calendar component for scheduling and events. 
 - [x] [**Dropzone**](`packages/dropzone`)
-  - **Details**: Drag and drop file upload area.
-  - **Path**: 
+  - **Details**: Drag and drop file upload area. 
 - [x] [**Gantt**](`packages/gantt`)
-  - **Details**: Gantt chart for project management.
-  - **Path**: 
+  - **Details**: Gantt chart for project management. 
 - [x] [**Kanban**](`packages/kanban`)
-  - **Details**: Kanban board for task management.
-  - **Path**: 
+  - **Details**: Kanban board for task management. 
 - [x] [**Table**](`packages/table`)
-  - **Details**: Data table for displaying structured information.
-  - **Path**: 
+  - **Details**: Data table for displaying structured information. 
 
 ## Databases
 - [ ] [**Dashboards**](`packages/databases/dashboards`)
-  - **Details**: Create and manage data dashboards.
-  - **Path**: 
+  - **Details**: Create and manage data dashboards. 
 - [ ] [**Events**](`packages/databases/events`)
-  - **Details**: Event logging and management system.
-  - **Path**: 
+  - **Details**: Event logging and management system. 
 - [ ] [**Logs**](`packages/databases/logs`)
-  - **Details**: System for tracking and storing logs.
-  - **Path**: 
+  - **Details**: System for tracking and storing logs. 
 - [ ] [**Notifications**](`packages/databases/notifications`)
-  - **Details**: Notification system for user alerts.
-  - **Path**: 
+  - **Details**: Notification system for user alerts. 
 - [ ] [**Payments**](`packages/databases/payments`)
-  - **Details**: Payment processing and management.
-  - **Path**: 
+  - **Details**: Payment processing and management. 
 - [ ] [**Permissions**](`packages/databases/permissions`)
-  - **Details**: User permissions and access control.
-  - **Path**: 
+  - **Details**: User permissions and access control. 
 - [ ] [**Reports**](`packages/databases/reports`)
-  - **Details**: Generate and manage reports.
-  - **Path**: 
+  - **Details**: Generate and manage reports. 
 - [ ] [**Roles**](`packages/databases/roles`)
-  - **Details**: Role-based access management.
-  - **Path**: 
-- [ ] [**Transactions**](`packages/databases/transactions`)
-  - **Details**: Transaction processing and history.
-  - **Path**: 
+  - **Details**: Role-based access management. 
+- [x] [**Transactions**](`packages/databases/transactions`)
+  - **Details**: Transaction processing and history. 
 - [ ] [**Users**](`packages/databases/users`)
-  - **Details**: User management and authentication.
-  - **Path**: 
+  - **Details**: User management and authentication. 
 
 ## Auth
 - [ ] [**Change Password**](`packages/auth/change-password`)
-  - **Details**: Feature to allow users to change their password.
-  - **Path**: 
+  - **Details**: Feature to allow users to change their password. 
 - [ ] [**Forgot Password**](`packages/auth/forgot-password`)
-  - **Details**: Password recovery process for users.
-  - **Path**: 
+  - **Details**: Password recovery process for users. 
 - [ ] [**Login**](`packages/auth/login`)
-  - **Details**: User login interface and authentication.
-  - **Path**: 
+  - **Details**: User login interface and authentication. 
 - [ ] [**Register**](`packages/auth/register`)
-  - **Details**: User registration and account creation.
-  - **Path**: 
+  - **Details**: User registration and account creation. 
 - [ ] [**Reset Password**](`packages/auth/reset-password`)
-  - **Details**: Password reset functionality.
-  - **Path**: 
+  - **Details**: Password reset functionality. 
 - [ ] [**Verify Email**](`packages/auth/verify-email`)
-  - **Details**: Email verification process for new users.
-  - **Path**: 
+  - **Details**: Email verification process for new users. 
 
 ## Display
 - [x] [**Announcement**](`packages/display/announcement`)
-  - **Details**: Display announcements to users.
-  - **Path**: 
+  - **Details**: Display announcements to users. 
 - [x] [**Banner**](`packages/display/banner`)
-  - **Details**: Banner component for promotional content.
-  - **Path**: 
+  - **Details**: Banner component for promotional content. 
 - [x] [**Bento Grid**](`packages/display/bento-grid`)
-  - **Details**: Grid layout for displaying content.
-  - **Path**: 
+  - **Details**: Grid layout for displaying content. 
 - [ ] [**Card**]( `packages/display/card`)
-  - **Details**: Card component for content display.
-  - **Path**: 
+  - **Details**: Card component for content display. 
 - [x] [**List**]( `packages/display/list`)
-  - **Details**: List component for itemized content.
-  - **Path**: 
+  - **Details**: List component for itemized content. 

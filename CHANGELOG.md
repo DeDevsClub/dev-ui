@@ -24,8 +24,14 @@
   - kanban
 
 
-# v0.1.2 (Mon 24 Feb 2025)
+# v0.1.2 (Sun 23 Feb 2025)
   - Components:
     - input-password
     - transactions
     - bento grid
+
+# v0.1.3 (Mon 24 Feb 2025)
+  - Components:
+    - chatv0
+    - input-password
+    - pill
