@@ -616,7 +616,8 @@ export const EditorProvider = ({
               });
 
               popup = tippy('body', {
-                getReferenceClientRect: props.clientRect,
+                getReferenceClientRect: () =>
+                  props.clientRect?.() || new DOMRect(),
                 appendTo: () => document.body,
                 content: component.element,
                 showOnCreate: true,
@@ -630,7 +631,8 @@ export const EditorProvider = ({
               component.updateProps(props);
 
               popup[0].setProps({
-                getReferenceClientRect: props.clientRect,
+                getReferenceClientRect: () =>
+                  props.clientRect?.() || new DOMRect(),
               });
             },
 

@@ -201,7 +201,6 @@ export const ColorPickerHue = ({
   ...props
 }: ColorPickerHueProps) => {
   const { hue, setHue } = useColorPicker();
-
   return (
     <Root
       value={[hue]}
