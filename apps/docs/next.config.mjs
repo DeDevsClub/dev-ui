@@ -184,16 +184,6 @@ const config = {
         destination: '/components/database/transaction/:slug*',
         permanent: true,
       },
-      {
-        source: '/www',
-        destination: '/components/pages/www',
-        permanent: true,
-      },
-      {
-        source: '/www/:slug*',
-        destination: '/components/pages/www/:slug*',
-        permanent: true,
-      },
     ];
   },
 
