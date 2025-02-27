@@ -24,22 +24,22 @@ interface SocialNetworkProps {
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
-      imageUrl: 'https://i.pravatar.cc/250?img=58',
-      firstName: 'Leo',
-      lastName: 'Miranda',
+      imageUrl: 'https://x.com/0xBuns/photo',
+      firstName: 'Buns',
+      lastName: 'Enchantress',
       positions: ['Vue Fronted Developer', 'Creator Of This Website'],
       socialNetworks: [
         {
           name: 'LinkedIn',
-          url: 'https://www.linkedin.com/in/leopoldo-miranda/',
+          url: 'https://www.linkedin.com/in/buns',
         },
         {
           name: 'Github',
-          url: 'https://github.com/leoMirandaa',
+          url: 'https://github.com/BunsDev',
         },
         {
           name: 'X',
-          url: 'https://x.com/leo_mirand4',
+          url: 'https://x.com/0xBuns',
         },
       ],
     },

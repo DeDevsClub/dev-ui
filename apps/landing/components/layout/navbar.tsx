@@ -1,6 +1,6 @@
-"use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
-import React from "react";
+'use client';
+import { ChevronsDown, Github, Menu } from 'lucide-react';
+import React from 'react';
 import {
   Sheet,
   SheetContent,
@@ -8,8 +8,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { Separator } from "../ui/separator";
+} from '../ui/sheet';
+import { Separator } from '../ui/separator';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,11 +17,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
-import { ToggleTheme } from "./toogle-theme";
+} from '../ui/navigation-menu';
+import { Button } from '../ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
+import { ToggleTheme } from './toogle-theme';
 
 interface RouteProps {
   href: string;
@@ -35,37 +35,37 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: '#testimonials',
+    label: 'Testimonials',
   },
   {
-    href: "#team",
-    label: "Team",
+    href: '#team',
+    label: 'Team',
   },
   {
-    href: "#contact",
-    label: "Contact",
+    href: '#contact',
+    label: 'Contact',
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: '#faq',
+    label: 'FAQ',
   },
 ];
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: 'Showcase Your Value ',
+    description: 'Highlight how your product solves user problems.',
   },
   {
-    title: "Build Trust",
+    title: 'Build Trust',
     description:
-      "Leverages social proof elements to establish trust and credibility.",
+      'Leverages social proof elements to establish trust and credibility.',
   },
   {
-    title: "Capture Leads",
+    title: 'Capture Leads',
     description:
-      "Make your lead capture form visually appealing and strategically.",
+      'Make your lead capture form visually appealing and strategically.',
   },
 ];
 
@@ -178,8 +178,9 @@ export const Navbar = () => {
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
+            href="https://github.com/dedevsclub/dedevs-ui.git"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Github className="size-5" />
           </Link>

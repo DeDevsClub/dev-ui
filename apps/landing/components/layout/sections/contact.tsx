@@ -131,7 +131,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="Buns" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -144,7 +144,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Enchantress" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -162,7 +162,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="leomirandadev@gmail.com"
+                            placeholder="admin@dedevs.club"
                             {...field}
                           />
                         </FormControl>
@@ -185,7 +185,7 @@ export const ContactSection = () => {
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
+                              <SelectValue placeholder="Select subject" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>

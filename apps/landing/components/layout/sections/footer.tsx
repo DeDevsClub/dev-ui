@@ -1,6 +1,6 @@
-import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
-import Link from "next/link";
+import { Separator } from '@/components/ui/separator';
+import { ChevronsDownIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export const FooterSection = () => {
   return (
@@ -106,10 +106,10 @@ export const FooterSection = () => {
             &copy; 2024 Designed and developed by
             <Link
               target="_blank"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/dedevsclub"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Leo Miranda
+              DeDevsClub
             </Link>
           </h3>
         </section>

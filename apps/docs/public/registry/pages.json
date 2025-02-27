@@ -5,7 +5,11 @@
   "type": "registry:ui",
   "author": "DeDevsClub <admin@dedevs.club>",
   "registryDependencies": [],
-  "dependencies": ["lucide-react", "next"],
+  "dependencies": [
+    "@repo/www",
+    "lucide-react",
+    "next"
+  ],
   "devDependencies": [],
   "files": [
     {

@@ -150,6 +150,16 @@ const config = {
         permanent: true,
       },
       {
+        source: '/select',
+        destination: '/components/select',
+        permanent: true,
+      },
+      {
+        source: '/select/:slug*',
+        destination: '/components/select/:slug*',
+        permanent: true,
+      },
+      {
         source: '/snippet',
         destination: '/components/code/snippet',
         permanent: true,
